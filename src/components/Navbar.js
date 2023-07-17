@@ -4,8 +4,8 @@ import { LuMenu } from "react-icons/lu";
 import NavMenu from './NavMenu';
 import L from "./L.json"
 
-export default function Navbar({lang,handleLangChange,handleNavChange}) {
-    const [isOpen, setIsOpen] = useState(false);
+export default function Navbar({lang,handleLangChange,handleNavChange,isOpen,setIsOpen}) {
+    // const [isOpen, setIsOpen] = useState(false);
 
     return (
         <nav className="flex flex-col items-center w-screen">
