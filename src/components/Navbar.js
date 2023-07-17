@@ -1,6 +1,6 @@
 // import {React} from 'react'
-import { React } from 'react'
-import { LuMenu } from "react-icons/lu";
+import {React} from 'react'
+import {LuMenu} from "react-icons/lu";
 import NavMenu from './NavMenu';
 import L from "./L.json"
 
@@ -12,7 +12,7 @@ export default function Navbar({lang,handleLangChange,handleNavChange,isOpen,set
                 <div className="flex flex-row items-center hidden md:block py-2">
                     <NavMenu lang={lang} handleLangChange={handleLangChange} handleNavChange={handleNavChange}/>
                 </div>
-                <button onClick={() => setIsOpen(!isOpen)} type="button" className="md:hidden text-white "><LuMenu/></button>
+                <button onClick={()=>setIsOpen(!isOpen)} type="button" className="md:hidden text-white "><LuMenu/></button>
             </div>
             {isOpen&&(<NavMenu lang={lang} handleLangChange={handleLangChange} handleNavChange={handleNavChange}/>)}
         </nav>

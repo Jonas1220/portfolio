@@ -1,8 +1,8 @@
 import React from 'react'
 import image from '../img/jk.jpg';
 import Btn from './Btn';
-import { FaTwitter,FaGithub,FaLinkedinIn } from "react-icons/fa6";
-import { PiEnvelopeSimple,PiPhone } from "react-icons/pi";
+import {FaTwitter,FaGithub,FaLinkedinIn} from "react-icons/fa6";
+import {PiEnvelopeSimple,PiPhone} from "react-icons/pi";
 import L from "./L.json"
 
 export default function Home({lang}) {

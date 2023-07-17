@@ -1,6 +1,6 @@
 import React from 'react'
 import L from "./L.json"
-import { FiShare } from "react-icons/fi";
+import {FiShare} from "react-icons/fi";
 
 export default function ProjectCard({name,description,url,lang}) {
     return (

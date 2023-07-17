@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import {useState} from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
@@ -11,9 +11,9 @@ import Donation from './components/Donation';
 const LOCAL_STORAGE_LANG='language';
 
 function App() {
-    const [lang,setLang] = useState((localStorage.getItem(LOCAL_STORAGE_LANG)==='de'||localStorage.getItem(LOCAL_STORAGE_LANG)==='en')?localStorage.getItem(LOCAL_STORAGE_LANG):(detectBrowserLanguage().substring(0,2)==='de')?'de':'en')
+    const [lang,setLang]=useState((localStorage.getItem(LOCAL_STORAGE_LANG)==='de'||localStorage.getItem(LOCAL_STORAGE_LANG)==='en')?localStorage.getItem(LOCAL_STORAGE_LANG):(detectBrowserLanguage().substring(0,2)==='de')?'de':'en')
     const [currentView,setCurrentView]=useState('Home')
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen,setIsOpen]=useState(false);
     function handleLangChange(lang) {setLang(lang);}
     function handleNavChange(nav) {
         setCurrentView(nav);
@@ -21,14 +21,10 @@ function App() {
     }
     function renderSwitch(param) {
         switch(param) {
-            case 'Home':
-                return <Home lang={lang}/>;
-            case 'About':
-                return <About lang={lang}/>;
-            case 'Projects':
-                return <Projects lang={lang}/>;
-            default:
-                return 'foo';
+            case 'Home': return <Home lang={lang}/>;
+            case 'About': return <About lang={lang}/>;
+            case 'Projects': return <Projects lang={lang}/>;
+            default:return'page not found';
         }
     }
     return (
