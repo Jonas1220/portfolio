@@ -16,10 +16,8 @@ export default function Home({lang}) {
                 <h1 className="text-4xl text-slate-800 my-3">JONAS KAATZ</h1>
                 <p className="text-slate-400 mb-5">SOFTWARE ENGINEER</p>
                 <hr className='my-4'/>
-
                 <a href="mailto:hi@jonaskaatz.com" className="flex items-center text-slate-400 mx-2 mb-5"><PiEnvelopeSimple className="text-xl text-indigo-500 mr-1"/>hi@jonaskaatz.com</a>
                 <a href="tel:+4915221994132" className="flex items-center text-slate-400 mx-2 mb-5"><PiPhone className="text-xl text-indigo-500 mr-1"/>+49 15221994132</a>
-
                 <div className="flex my-4 mx-2">
                     <Btn icon={<FaTwitter className="text-xl"/>} url={'https://twitter.com/jonaskaatz'} />
                     <Btn icon={<FaGithub className="text-xl"/>} url={'https://github.com/Jonas1220'} />
