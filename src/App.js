@@ -5,6 +5,7 @@ import Home from './components/Home';
 import Projects from './components/Projects';
 import About from './components/About';
 import detectBrowserLanguage from 'detect-browser-language'
+import Donation from './components/Donation';
 // https://preview.colorlib.com/#meetme
 
 const LOCAL_STORAGE_LANG='language';
@@ -12,10 +13,11 @@ const LOCAL_STORAGE_LANG='language';
 function App() {
     const [lang,setLang] = useState((localStorage.getItem(LOCAL_STORAGE_LANG)==='de'||localStorage.getItem(LOCAL_STORAGE_LANG)==='en')?localStorage.getItem(LOCAL_STORAGE_LANG):(detectBrowserLanguage().substring(0,2)==='de')?'de':'en')
     const [currentView,setCurrentView]=useState('Home')
-
+    const [isOpen, setIsOpen] = useState(false);
     function handleLangChange(lang) {setLang(lang);}
     function handleNavChange(nav) {
         setCurrentView(nav);
+        setIsOpen(false);
     }
     function renderSwitch(param) {
         switch(param) {
@@ -32,9 +34,10 @@ function App() {
     return (
         <div className="h-screen bg-slate-100">
             <div className="flex flex-col items-center md:pt-5 lg:pt-9 bg-gradient-to-r from-cyan-500 to-indigo-500 h-2/5">
-                <Navbar lang={lang} handleLangChange={handleLangChange} handleNavChange={handleNavChange}/>
+                <Navbar setIsOpen={setIsOpen} isOpen={isOpen} lang={lang} handleLangChange={handleLangChange} handleNavChange={handleNavChange}/>
                 {renderSwitch(currentView)}
             </div>
+            <Donation lang={lang}/>
         </div>
     );
 }

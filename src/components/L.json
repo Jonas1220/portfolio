@@ -6,5 +6,12 @@
     "email":{"de":"hi@jonaskaatz.com","en":"hi@jonaskaatz.com"},
     "skills":{"de":{"Kompetent":"php, javascript, bootstrap, html, css, react, react native, mysql","Erfahrung":"python, expo, git, mongodb","Sonstiges":"Krypto, Kaffee, Reisen"},"en":{"proficient":"php, javascript, bootstrap, html, css, react, react native, mysql","experience":"python, expo, git, mongodb","other":"crypto, coffee, travel"}},
     "about":{"de":"Über mich","en":"About me"},
-    "projects":{"de":"Projekte","en":"Projects"}
+    "projects":{
+        "de":"Projekte","en":"Projects",
+        "projectCards":{
+            "Easy Modal Design":{"de":"Bring deinen einzigartigen Stil zum Ausdruck: Erstelle atemberaubende Modals online! Entfessel dein Designpotenzial mit unserem Online-Modal-Designer. Von elegantem Minimalismus bis hin zu lebendigen Kreationen – unsere Plattform ermöglicht es dir, deinen einzigartigen Stil mühelos zu präsentieren.","en":"Express Your Unique Style: Create Stunning Modals Online! Unleash your design potential with our Online Modal Designer. From elegant minimalism to vibrant creations, our platform empowers you to showcase your unique style effortlessly.","url":"https://easymodaldesign.com/"},
+            "Dojo Generator":{"de":"Ein NFT-bezogenes Projekt. Chimpers Dojo Twitter-Banner-Anpassung! Keine Wallet-Verbindung erforderlich! Werde kreativ mit unserer umfangreichen Auswahl and Gegenständen. Jede Woche neue Gegenstände.","en":"A NFT related project. Chimpers Dojo Twitter banner customization! No wallet connection required! Get creative with our extensive asset library. New assets every week.","url":"https://dojo-gen.com/"}
+        }
+    },
+    "support":{"de":"Unterstütze mich","en":"Support me"}
 }
