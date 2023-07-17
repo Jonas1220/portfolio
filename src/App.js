@@ -33,7 +33,7 @@ function App() {
                 <Navbar setIsOpen={setIsOpen} isOpen={isOpen} lang={lang} handleLangChange={handleLangChange} handleNavChange={handleNavChange}/>
                 {renderSwitch(currentView)}
             </div>
-            <Donation lang={lang}/>
+            {/* <Donation lang={lang}/> */}
         </div>
     );
 }
