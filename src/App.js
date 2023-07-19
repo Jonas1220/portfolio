@@ -1,5 +1,4 @@
 import {useState} from 'react';
-import './App.css';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Projects from './components/Projects';
@@ -28,12 +27,10 @@ function App() {
         }
     }
     return (
-        <div className="h-screen bg-slate-100">
-            <div className="flex flex-col items-center md:pt-5 lg:pt-9 bg-gradient-to-r from-cyan-500 to-indigo-500 h-2/5">
-                <Navbar setIsOpen={setIsOpen} isOpen={isOpen} lang={lang} handleLangChange={handleLangChange} handleNavChange={handleNavChange}/>
-                {renderSwitch(currentView)}
-            </div>
-            {/* <Donation lang={lang}/> */}
+        <div className="flex flex-col items-center md:pt-5 lg:pt-9 bg-gradient-to-r from-cyan-500 to-indigo-500 h-96">
+            <Navbar setIsOpen={setIsOpen} isOpen={isOpen} lang={lang} handleLangChange={handleLangChange} handleNavChange={handleNavChange}/>
+            {renderSwitch(currentView)}
+            <Donation lang={lang}/>
         </div>
     );
 }
