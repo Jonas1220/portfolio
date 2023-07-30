@@ -19,7 +19,8 @@ export default function Home({lang}) {
                 <a href="mailto:hi@jonaskaatz.com" className="flex items-center text-slate-400 mx-2 mb-5"><PiEnvelopeSimple className="text-xl text-indigo-500 mr-1"/>hi@jonaskaatz.com</a>
                 <a href="tel:+4915221994132" className="flex items-center text-slate-400 mx-2 mb-5"><PiPhone className="text-xl text-indigo-500 mr-1"/>+49 15221994132</a>
                 <div className="flex my-4 mx-2">
-                    <Btn icon={<FaTwitter className="text-xl"/>} url={'https://twitter.com/jonaskaatz'} />
+                    {/* <Btn icon={<FaTwitter className="text-xl"/>} url={'https://twitter.com/jonaskaatz'} /> */}
+                    <Btn icon={'𝕏'} size={true} url={'https://x.com/jonaskaatz'} />
                     <Btn icon={<FaGithub className="text-xl"/>} url={'https://github.com/Jonas1220'} />
                     <Btn icon={<FaLinkedinIn className="text-xl"/>} url={'https://www.linkedin.com/in/jonaskaatz/'} />
                 </div>
