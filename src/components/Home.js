@@ -14,7 +14,7 @@ export default function Home({lang}) {
             <div className="w-full lg:w-1/2 lg:w-3/5 p-5 lg:p-10">
                 <p className="text-slate-400">{L['welcome'][lang]}</p>
                 <h1 className="text-4xl text-slate-800 my-3">JONAS KAATZ</h1>
-                <p className="text-slate-400 mb-5">SOFTWARE ENGINEER</p>
+                <p className="text-slate-400 mb-5">SOFTWARE DEVELOPER</p>
                 <hr className='my-4'/>
                 <a href="mailto:hi@jonaskaatz.com" className="flex items-center text-slate-400 mx-2 mb-5"><PiEnvelopeSimple className="text-xl text-indigo-500 mr-1"/>hi@jonaskaatz.com</a>
                 <a href="tel:+4915221994132" className="flex items-center text-slate-400 mx-2 mb-5"><PiPhone className="text-xl text-indigo-500 mr-1"/>+49 15221994132</a>
