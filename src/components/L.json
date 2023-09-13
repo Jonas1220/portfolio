@@ -6,6 +6,15 @@
     "email":{"de":"hi@jonaskaatz.com","en":"hi@jonaskaatz.com"},
     "skills":{"de":{"Kompetent":"php, javascript, bootstrap, tailwind, html, css, react, react native, mysql","Erfahrung":"python, expo, git, mongodb","Sonstiges":"Krypto, Kaffee, Reisen"},"en":{"proficient":"php, javascript, bootstrap, tailwind, html, css, react, react native, mysql","experience":"python, expo, git, mongodb","other":"crypto, coffee, travel"}},
     "about":{"de":"Über mich","en":"About me"},
+    "reviews":{
+        "de":"Rezensionen","en":"Reviews",
+        "heading":{
+            "de":"Rezensionen von vorherigen Kunden","en":"Reviews from past clients"
+        },
+        "reviewCards":{
+            "Florian Wunderle, Fa. FloTec":{"de":"Herr Kaatz hat mich mit seiner sehr selbständigen, kompetenten und lösungsorientierten Arbeitsweise absolut überzeugt. Die Integration von Bootstrap, in eine bestehendes Webprojekt wurde im Sommer 2023 innerhalb des vereinbarten Zeitrahmens perfekt umgesetzt. Ich freue mich auf weitere zukünftige Projekte mit Herrn Kaatz. ","en":"Mr. Kaatz absolutely convinced me with his very independent, competent and solution-oriented way of working. The integration of Bootstrap into an existing web project was perfectly implemented in summer 2023 within the agreed time frame. I look forward to further future projects with Mr. Kaatz."}
+        }
+    },
     "projects":{
         "de":"Projekte","en":"Projects",
         "projectCards":{
