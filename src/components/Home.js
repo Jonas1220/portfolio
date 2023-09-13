@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import image from '../img/jk.jpg';
 import Btn from './Btn';
 import {FaTwitter,FaGithub,FaLinkedinIn} from "react-icons/fa6";
@@ -6,7 +6,8 @@ import {PiEnvelopeSimple,PiPhone} from "react-icons/pi";
 import L from "./L.json"
 import Navbar from './Navbar';
 
-export default function Home({lang,setIsOpen,isOpen,handleLangChange}) {
+export default function Home({lang,handleLangChange}) {
+    const [isOpen,setIsOpen]=useState(false);
     return (
         <div className="flex flex-col items-center md:pt-5 lg:pt-9 bg-gradient-to-r from-cyan-500 to-indigo-500 h-96">
             <Navbar setIsOpen={setIsOpen} isOpen={isOpen} lang={lang} handleLangChange={handleLangChange} />

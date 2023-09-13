@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import L from "./L.json"
 import Navbar from './Navbar'
 import ReviewCard from './ReviewCard'
 
-export default function Reviews({lang,setIsOpen,isOpen,handleLangChange}) {
+export default function Reviews({lang,handleLangChange}) {
+    const [isOpen,setIsOpen]=useState(false);
     return (
         <div className="flex flex-col items-center md:pt-5 lg:pt-9 bg-gradient-to-r from-cyan-500 to-indigo-500 h-96">
             <Navbar setIsOpen={setIsOpen} isOpen={isOpen} lang={lang} handleLangChange={handleLangChange} />
