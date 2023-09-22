@@ -3,7 +3,7 @@ import Home from './components/Home';
 import Projects from './components/Projects';
 import About from './components/About';
 import detectBrowserLanguage from 'detect-browser-language'
-import Donation from './components/Donation';
+// import Donation from './components/Donation';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Reviews from './components/Reviews';
 // https://preview.colorlib.com/#meetme
@@ -21,7 +21,7 @@ function App() {
                 <Route path='/about' element={<About lang={lang} handleLangChange={handleLangChange} />} />
                 <Route path='/reviews' element={<Reviews lang={lang} handleLangChange={handleLangChange} />} />
             </Routes>
-            <Donation lang={lang}/>
+            {/* <Donation lang={lang}/> */}
         </BrowserRouter>
     );
 }
