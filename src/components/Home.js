@@ -6,6 +6,7 @@ import {PiEnvelopeSimple,PiPhone} from "react-icons/pi";
 import L from "./L.json"
 import Navbar from './Navbar';
 
+
 export default function Home({lang,handleLangChange}) {
     const [isOpen,setIsOpen]=useState(false);
     return (
