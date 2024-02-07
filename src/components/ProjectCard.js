@@ -5,7 +5,7 @@ import {FiShare} from "react-icons/fi";
 export default function ProjectCard({name,description,url,lang,img}) {
     return (
         <div className="flex flex-row flex-wrap mb-8 w-11/12 md:w-3/4 lg:w-2/3 max-w-2xl">
-            <div className='flex flex-col items-center bg-slate-700 rounded-3xl p-5 h-full shadow-xl shadow-slate-900'>
+            <div className='flex flex-col items-center bg-slate-800 _rounded-3xl p-6 shadow-xl shadow-black sslate-900 max-w-2xl'>
                 <img className='max-w-[100px] mb-2' src={require("../img/"+img+".png")} alt={img+' logo'}/>
                 <h3 className="text-center text-2xl mb-2">{name}</h3>
                 <p className="text-center">{description[lang]}</p>
