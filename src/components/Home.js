@@ -9,9 +9,9 @@ import Navbar from './Navbar';
 export default function Home({lang,handleLangChange}) {
     const [isOpen,setIsOpen]=useState(false);
     return (
-        <div className="flex flex-col items-center justify-center bg-slate-900s w-full mt-5">
+        <div className="flex flex-col items-center justify-center bg-slate-900s w-full">
             <Navbar setIsOpen={setIsOpen} isOpen={isOpen} lang={lang} handleLangChange={handleLangChange} />
-            <div className="flex flex-col w-11/12 md:w-3/4 lg:w-2/3 bg-slate-800 _rounded-3xl p-6 shadow-xl shadow-black sslate-900 max-w-2xl">
+            <div className="flex flex-col w-11/12 md:w-3/4 lg:w-2/3 bg-slate-800 _rounded-3xl p-6 shadow-xl shadow-black sslate-900 max-w-2xl mb-5">
                 <div className="flex flex-col justify-center items-center w-full mb-5">
                     <p className="text-slate-300 text-sm">{L['welcome'][lang]}</p>
                     <h1 className="text-4xl text-slate-200">Jonas</h1>
